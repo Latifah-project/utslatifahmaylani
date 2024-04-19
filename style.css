@@ -1,0 +1,103 @@
+/* External CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh; /* Mengatur tinggi minimum body menjadi 100% dari tinggi viewport */
+  overflow: hidden; /* Menghilangkan overflow untuk mencegah geseran horizontal */
+  display: flex; /* Membuat body menjadi flex container */
+  flex-direction: column; /* Menetapkan arah flex menjadi kolom */
+}
+
+header {
+  background-color: rgb(188, 44, 142);
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+li[class="black"] {
+  color: black;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex: 1; /* Mengatur konten utama untuk mengisi sisa ruang secara fleksibel */
+  font-size: 20px; /* Mengatur ukuran font konten utama */
+}
+
+article {
+  flex: 2;
+}
+
+aside {
+  margin-left: 1.5rem;
+  flex: 1;
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 10%;
+  font-size: 20px; /* Mengatur ukuran font sidebar */
+  align-items: center;
+  justify-content: center;
+}
+
+aside p,
+aside ul,
+aside li,
+aside h2 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+aside ul {
+  padding-left: 20px; /* Mengatur padding kiri untuk ul di dalam aside */
+}
+
+footer {
+  background-color: rgb(188, 44, 142);
+  text-align: center;
+  padding: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; /* Menempatkan ikon sosial media di bagian bawah */
+  margin-bottom: 20px; /* Memberikan jarak dari konten utama */
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  border-radius: 40%;
+  width: 40px; /* Ubah ukuran sesuai kebutuhan */
+  height: 40px; /* Ubah ukuran sesuai kebutuhan */
+  margin-top: 8px;
+  float: inline-start;
+}
